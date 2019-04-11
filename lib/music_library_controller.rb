@@ -31,4 +31,7 @@ class MusicLibraryController
 
     #"1. Thundercat - For Love I Come - dance"
   end
+
+  def list_artists 
+  end 
 end
