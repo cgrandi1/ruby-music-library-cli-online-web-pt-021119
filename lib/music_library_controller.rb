@@ -25,7 +25,9 @@ class MusicLibraryController
   end
 
   def list_songs
-    binding.pry
-    puts Song.all.uniq.sort
+    Song.all.sort_by{|song| song.name}.each.with_index(1) do |song, i|
+      puts "#{i}. #{song.name}"
+
+    #"1. Thundercat - For Love I Come - dance"
   end
 end
