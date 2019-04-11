@@ -24,6 +24,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    put Song.all.uniq.sort
+    puts Song.all.uniq.sort
   end
 end
